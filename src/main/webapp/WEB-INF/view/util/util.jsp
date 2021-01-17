@@ -180,6 +180,7 @@ new Vue({
                                 showClose: true,
                                 type: 'success'
                         });
+                        document.body.removeChild(oInput)
                 }
         }
 })
