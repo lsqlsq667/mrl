@@ -13,15 +13,15 @@
                                 <el-input
                                         v-model="formInline.account"
                                         placeholder="账号"
-                                        maxlength="30"
-                                        show-word-limit
+                                        maxlength="100"
+                                        <%--show-word-limit--%>
                                         clearable></el-input>
                         </el-form-item>
                         <el-form-item label="密码">
                                 <el-input v-model="formInline.pwd"
                                           placeholder="密码"
-                                          maxlength="50"
-                                          show-word-limit
+                                          maxlength="100"
+                                          <%--show-word-limit--%>
                                           clearable></el-input>
                         </el-form-item>
                         <el-form-item>
@@ -34,11 +34,12 @@
 
                 </el-form>
                 <div style="margin: 20px 0;"></div>
-                <el-input style="width: 520px"
+                <el-input style="width: 320px"
                           type="textarea"
                           :autosize="{ minRows: 2, maxRows: 4}"
                           v-model="value">
                 </el-input>
+                <el-button type="primary" @click="onCopy">复制</el-button>
                 <div style="width: 800px;margin: auto;">
                         <el-table
                                 :key="tableKey"
@@ -166,6 +167,19 @@ new Vue({
                         for (var k in o)
                                 if (new RegExp("(" + k + ")").test(fmt)) fmt = fmt.replace(RegExp.$1, (RegExp.$1.length == 1) ? (o[k]) : (("00" + o[k]).substr(("" + o[k]).length)));
                         return fmt;
+                },
+                onCopy(){
+                        var oInput = document.createElement('input');
+                        oInput.value = this.value;
+                        document.body.appendChild(oInput);
+                        console.log(oInput)
+                        oInput.select(); // 选择对象
+                        document.execCommand("Copy"); // 执行浏览器复制命令
+                        this.$message({
+                                message: '复制成功',
+                                showClose: true,
+                                type: 'success'
+                        });
                 }
         }
 })
