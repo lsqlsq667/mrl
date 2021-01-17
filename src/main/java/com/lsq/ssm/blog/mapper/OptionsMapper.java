@@ -4,7 +4,7 @@ import com.lsq.ssm.blog.entity.Options;
 import org.apache.ibatis.annotations.Mapper;
 
 /**
- * @author liuyanzhao
+ * @author lsq
  */
 @Mapper
 public interface OptionsMapper {

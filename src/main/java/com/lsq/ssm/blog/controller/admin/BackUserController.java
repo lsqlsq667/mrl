@@ -18,7 +18,7 @@ import java.util.Map;
 
 
 /**
- * @author liuyanzhao
+ * @author lsq
  */
 @Controller
 @RequestMapping("/admin/user")

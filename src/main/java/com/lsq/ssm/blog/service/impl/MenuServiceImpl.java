@@ -10,7 +10,7 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 
 /**
- * @author liuyanzhao
+ * @author lsq
  */
 @Service
 public class MenuServiceImpl implements MenuService {

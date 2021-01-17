@@ -15,7 +15,7 @@ import java.util.List;
 
 
 /**
- * @author liuyanzhao
+ * @author lsq
  */
 @Controller
 @RequestMapping("/admin/link")

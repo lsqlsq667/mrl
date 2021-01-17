@@ -10,7 +10,7 @@ import org.springframework.web.servlet.ModelAndView;
 
 
 /**
- * @author liuyanzhao
+ * @author lsq
  */
 @Controller
 @RequestMapping("/admin/options")

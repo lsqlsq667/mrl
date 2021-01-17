@@ -25,7 +25,7 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * @author liuyanzhao
+ * @author lsq
  */
 @Controller
 public class AdminController {

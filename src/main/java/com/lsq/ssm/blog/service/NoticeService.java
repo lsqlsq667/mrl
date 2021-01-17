@@ -5,7 +5,7 @@ import com.lsq.ssm.blog.entity.Notice;
 import java.util.List;
 
 /**
- * @author liuyanzhao
+ * @author lsq
  */
 public interface NoticeService {
 

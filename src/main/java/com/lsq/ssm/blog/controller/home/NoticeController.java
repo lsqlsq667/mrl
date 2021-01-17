@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import java.util.List;
 
 /**
- * @author liuyanzhao
+ * @author lsq
  */
 @Controller
 public class NoticeController {

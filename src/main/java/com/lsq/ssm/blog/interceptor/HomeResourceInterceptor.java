@@ -22,7 +22,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * @author liuyanzhao
+ * @author lsq
  */
 @Component
 public class HomeResourceInterceptor implements HandlerInterceptor {

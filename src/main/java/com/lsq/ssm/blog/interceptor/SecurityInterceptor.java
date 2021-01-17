@@ -11,7 +11,7 @@ import java.io.IOException;
 
 
 /**
- * @author liuyanzhao
+ * @author lsq
  */
 @Component
 public class SecurityInterceptor extends HandlerInterceptorAdapter {
