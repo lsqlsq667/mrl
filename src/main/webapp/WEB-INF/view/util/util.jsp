@@ -10,10 +10,19 @@
         <div id="app">
                 <el-form :inline="true" :model="formInline" class="demo-form-inline">
                         <el-form-item label="账号">
-                                <el-input v-model="formInline.account" placeholder="账号"></el-input>
+                                <el-input
+                                        v-model="formInline.account"
+                                        placeholder="账号"
+                                        maxlength="30"
+                                        show-word-limit
+                                        clearable></el-input>
                         </el-form-item>
                         <el-form-item label="密码">
-                                <el-input v-model="formInline.pwd" placeholder="密码"></el-input>
+                                <el-input v-model="formInline.pwd"
+                                          placeholder="密码"
+                                          maxlength="50"
+                                          show-word-limit
+                                          clearable></el-input>
                         </el-form-item>
                         <el-form-item>
                                 <el-radio v-model="formInline.type" label="1">解密</el-radio>
